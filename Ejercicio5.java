@@ -1,15 +1,18 @@
-public class Ejercicio5 {
+ public class Ejercicio5 {
     public static void main(String[] args) {
-        System.out.println("--- Lista de números del 1 al 100 ---");
-        for (int i = 1; i <= 100; i++) {
-            System.out.print(i + " ");
-        }
-        
-        System.out.println("\n\n--- Números divisibles entre 2 y 3 ---");
-        for (int i = 1; i <= 100; i++) {
-            if (i % 2 == 0 && i % 3 == 0) {
-                System.out.println("El número " + i + " es divisible entre 2 y 3.");
+        int[] numeros = {12, 7, 22, 19, 4, 33, 8, 15, 60, 41};
+        int pares = 0;
+        int impares = 0;
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
             }
         }
+
+        System.out.println("Cantidad de pares: " + pares);
+        System.out.println("Cantidad de impares: " + impares);
     }
-}
+ }

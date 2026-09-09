@@ -1,9 +1,28 @@
+ import java.util.Scanner;
+
 public class Ejercicio4 {
     public static void main(String[] args) {
-        System.out.println("Números del 1 al 100 usando bucle for:");
-        for (int i = 1; i <= 100; i++) {
-            System.out.print(i + " ");
+        Scanner scanner = new Scanner(System.in);
+        int[] numeros = {4, 15, 23, 8, 42, 16, 90, 31, 12, 5};
+
+        System.out.print("Introduce el número a buscar: ");
+        int buscado = scanner.nextInt();
+
+        boolean encontrado = false;
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] == buscado) {
+                encontrado = true;
+                break;
+            }
         }
-        System.out.println();
+
+        if (encontrado) {
+            System.out.println("El número " + buscado + " sí está en el arreglo.");
+        } else {
+            System.out.println("El número " + buscado + " no se encuentra en el arreglo.");
+        }
+
+        scanner.close();
     }
 }
