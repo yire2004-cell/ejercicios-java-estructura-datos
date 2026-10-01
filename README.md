@@ -1,0 +1,2 @@
+Conclusión Personal:
+Al desarrollar estos ejercicios, comprendí que la recursividad es una herramienta poderosa en la programación para resolver problemas complejos dividiéndolos en subproblemas más pequeños del mismo tipo. El mayor reto y aprendizaje fue la correcta identificación del "caso base"; sin él, las llamadas a los métodos se apilarían infinitamente en la memoria RAM. Aunque en algunos casos la iteración con bucles puede parecer más directa, la recursividad ofrece un código mucho más limpio y matemáticamente lógico.
